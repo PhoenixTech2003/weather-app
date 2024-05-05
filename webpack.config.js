@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: './src/js/index.js',
   output: {
     filename: 'bundle.js',
     // eslint-disable-next-line no-undef
@@ -33,7 +33,7 @@ module.exports = {
   plugins: [
     
     new HtmlWebpackPlugin({
-        
+        title: "Weather App"
       }),
 
       
