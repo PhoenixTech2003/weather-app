@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    padding: 50px;
+    gap: 20px;
+    grid-template-rows: 0.1fr 0.2fr 1fr;
+    justify-content: center;
+    height: 100dvh;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: whitesmoke;
+}
+
+h1{
+    justify-self: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 30px;
+}
+
+h1 + div{
+    display: flex;
+    align-items: center;
+}
+
+input{
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+input + button{
+    padding: 5px 20px;
+    transition: transform 2s;
+}
+
+input + button:hover{
+    transform: scale(1.5);
+}
+
+
+.weather-details{
+    display: grid;
+    justify-content: center;
+    
+}
+
+.reveal{
+    display: grid;
+    justify-items: center;
+    padding: 20px;
+    gap: 30px;
+    border-radius: 10px;
+    animation: reveal 2s;
+    grid-auto-rows: 0.1fr;
+    box-shadow: 0px 0px 5px grey;
+
+}
+
+@keyframes reveal {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
